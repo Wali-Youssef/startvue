@@ -1,8 +1,9 @@
 <script lang="ts">
 import { defineComponent, onMounted } from 'vue';
-
-
+import intro from '@/components/intro.vue';
+import moi from '@/components/moi.vue';
 import competence from '@/components/competence.vue';
+import projet from '@/components/projet.vue';
 
 import { supabase } from "../supabase";
 console.log("supabase :", supabase); //
@@ -50,7 +51,7 @@ export default defineComponent({
             });
         }
     },
-    components: { competence }
+    components: { competence, moi, intro, projet}
 });
 </script>
 
@@ -80,61 +81,14 @@ export default defineComponent({
 </style>
 
 <template>
-  
   <main class="font-fira-code text-white pt-20  ">
-    <div class="bg-custom-blue h-screen p-8 pt-[50px]">
-      <div class="max-w-4xl mx-auto">
-        <p class="text-sm md:text-base font-fira-code first" data-text="Bonjour, je m'appelle"></p>
-        <h1 class="text-5xl md:text-8xl font-bold mt-2 font-fira-code first" data-text="Youssef Wali."></h1>
-        <p class="text-4xl md:text-7xl font-bold mt-4 font-fira-code rest">J'adore le développement web !</p>
-        <p class="text-sm md:text-base mt-6 font-fira-code rest">
-          Je suis actuellement en 2eme année de BUT métiers du multimédia et de l'internet options développement web.
-        </p>
-        <p class="text-sm md:text-base mt-4 font-fira-code rest">
-          J'aime apprendre de nouvelles compétences et les mettre en œuvre dans la vraie vie !
-        </p>
-      </div>
-    </div>
+<intro /> 
 
-    <section class="py-0 bg-custom-blue" id="qui-je-suis">
-      <div class="max-w-4xl mx-auto px-4">
-        <div class="flex flex-wrap -mx-4">
-          <!-- Colonne de texte -->
-          <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
-            <h2 class="text-3xl font-bold mb-6 text-bleuneon relative">
-              01. Qui je suis ?
-              <!-- Barre sous le titre -->
-              <span class="block h-1 w-16 bg-bleuneon mt-2"></span>
-            </h2>
-            <p class="mb-4">
-              Bonjour! Je suis Youssef Wali, j'habite a audincourt .J'ai fait un bac général et je suis actuellement en
-              2eme année de BUT métiers du multimédia et de l'internet options développement web.
-            </p>
-            <p class="mb-4">
-              Je suis une personne créative, ponctuelle, dédiée, orientée vers les objectifs avec de bonnes valeurs
-              morales et éthiques...
-            </p>
-            <!-- Continuez avec plus de détails -->
-          </div>
-          
-          <!-- Colonne pour l'image avec le filtre et les barres -->
-          <div class="w-full lg:w-1/2 px-4 lg:mt-14 relative">
-            <!-- Ajoutez 'lg:mt-10' pour descendre l'image en mode desktop -->
-            <div class="w-full h-auto overflow-hidden rounded-lg shadow-lg">
-              <img src="#" alt="À propos de moi" class="w-full h-full object-cover" />
-              <!-- Overlay pour le filtre -->
-              <div class="absolute inset-0 bg-black opacity-25"></div>
-              <!-- Barres -->
-              <div class="absolute inset-0 border-4 border-bleuneon"></div>
-              <!-- Remplacez 'border-bleuneon' par la couleur souhaitée -->
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<moi />
 
-    <competence />
+<competence />
+
+<projet />
 
   </main>
 </template>
