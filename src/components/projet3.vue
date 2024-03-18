@@ -1,23 +1,23 @@
 <template>
     <div class="font-fira-code bg-custom-blue container mx-auto p-8 ">
       <div class=" shadow-md rounded px-8 pt-6 pb-8 mb-4">
-        <h1 class="text-3xl font-bold mb-4 text-bleuneon">Randoom</h1>
+        <h1 class="text-3xl font-bold mb-4 text-bleuneon">Indiglu Maghreb</h1>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <img src="../assets/randoom.png" alt="Image du projet" class="rounded-lg w-full md:w-auto md:max-h-85 object-contain mx-auto">
+            <img src="../assets/indiglu.png" alt="Image du projet" class="rounded-lg w-full md:w-auto md:max-h-85 object-contain mx-auto">
           </div>
           <div>
             <h2 class="text-xl font-semibold mb-2 text-bleuneon">Description</h2>
-            <p class="mb-4 text-slate-500">Randoom est un site qui vous permet de découvrir du contenu audiovisuel de manière aléatoire. Que ce soit des films, des séries ou des podcasts, Randoom vous propose une sélection variée à chaque visite, vous permettant ainsi de vous aventurer dans de nouvelles expériences de divertissement sans savoir à l'avance ce que vous allez découvrir.
+            <p class="mb-4 text-slate-500">Indiglu Maghreb est un site web qui vise à sensibiliser les populations du Maghreb sur le diabète. Notre plateforme rassemble une communauté engagée dans la lutte contre cette maladie en fournissant des ressources, des témoignages et des conseils pratiques pour aider à prévenir et à gérer le diabète dans notre région.
             </p>
             <h2 class="text-xl font-semibold mb-2 text-bleuneon">Technologies Utilisées</h2>
             <ul class="list-disc ml-6 text-slate-500 ">
+              <li>PHP</li>
+              <li>Wordpress</li>
               <li>VScode</li>
-              <li>Vuejs</li>
-              <li>pocketbase</li>
             </ul>
-            <h2 class="text-xl font-semibold mb-2 mt-4 text-bleuneon">Lien vers le projet</h2>
-<a href="https://www.figma.com/file/2xnN0ijMKVGIq6AFMOcdhT/Projet-S2---Maquette?type=design&node-id=386%3A762&mode=design&t=OEPLw3BavKHlNqmk-1" class="text-slate-500">Voir le dossier sur Figma</a>
+            <h2 class="text-xl font-semibold mb-2 mt-4 text-bleuneon">Lien vers le site</h2>
+<a href="https://maghreb.indiglu.com/" class="text-slate-500">maghreb.indiglu.com</a>
 
           </div>
         </div>
