@@ -61,11 +61,17 @@ import { ref } from 'vue';
 
 let open = ref(false);
 
-const scrollToSection = (event: { preventDefault: () => void; }, sectionId: any) => {
-    event.preventDefault(); // Empêcher le comportement de lien par défaut
-    const section = document.querySelector(sectionId);
+function scrollToSection(event: MouseEvent, sectionId: string): void {
+    event.preventDefault();
+
+    const section = document.querySelector(sectionId) as HTMLElement | null;
     if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
+        const offset = section.offsetTop - 50; // Adjust this value according to your needs
+        window.scrollTo({
+            top: offset,
+            behavior: 'smooth'
+        });
     }
-};
+}
+
 </script>
