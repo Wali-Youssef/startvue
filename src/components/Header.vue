@@ -5,7 +5,7 @@
 
 
         <nav class="container relative flex items-center justify-between px-6 py-8 text-white ">
-            <a href="#">
+            <a href="/">
                 <img src="../assets/logo1.svg" alt="Logo" class="w-12 h-12" />
             </a>
 
