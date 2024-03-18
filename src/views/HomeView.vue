@@ -4,6 +4,7 @@ import intro from '@/components/intro.vue';
 import moi from '@/components/moi.vue';
 import competence from '@/components/competence.vue';
 import projet from '@/components/projet.vue';
+import contact from '@/components/contact.vue';
 
 import { supabase } from "../supabase";
 console.log("supabase :", supabase); //
@@ -51,7 +52,7 @@ export default defineComponent({
             });
         }
     },
-    components: { competence, moi, intro, projet}
+    components: { competence, moi, intro, projet, contact}
 });
 </script>
 
@@ -81,14 +82,31 @@ export default defineComponent({
 </style>
 
 <template>
-  <main class="font-fira-code text-white  ">
-<intro /> 
+  <main class="font-fira-code text-white relative">
+    <intro /> 
+    <moi />
+    <competence />
+    <projet />
+    <contact />
 
-<moi />
-
-<competence />
-
-<projet />
-
+    <!-- Réseaux sociaux -->
+    <div class="absolute top-0 right-0 flex flex-col justify-center items-end h-full mr-4">
+      <!-- Remplacez les balises <a> ci-dessous par vos propres icônes de réseaux sociaux -->
+      <a href="../assets/missionbenevolat.png" class="text-white hover:text-gray-400 transition-colors duration-300 mb-2">
+        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <!-- Icône du réseau social 1 -->
+        </svg>
+      </a>
+      <a href="#" class="text-white hover:text-gray-400 transition-colors duration-300 mb-2">
+        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <!-- Icône du réseau social 2 -->
+        </svg>
+      </a>
+      <a href="#" class="text-white hover:text-gray-400 transition-colors duration-300">
+        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <!-- Icône du réseau social 3 -->
+        </svg>
+      </a>
+    </div>
   </main>
 </template>

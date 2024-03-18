@@ -33,5 +33,11 @@
     const goBack = () => {
       router.go(-1); // Retourne à la page précédente dans l'historique du navigateur
     };
+
+ 
+    import { supabase } from "../supabase";
+console.log("supabase :", supabase)
+
+
   </script>
   
