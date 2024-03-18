@@ -1,5 +1,5 @@
 <template>
-    <div class="font-fira-code bg-custom-blue container mx-auto p-8 mt-16">
+    <div class="font-fira-code bg-custom-blue container mx-auto p-8 ">
       <div class=" shadow-md rounded px-8 pt-6 pb-8 mb-4">
         <h1 class="text-3xl font-bold mb-4 text-bleuneon">Mission Bénévolat</h1>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">

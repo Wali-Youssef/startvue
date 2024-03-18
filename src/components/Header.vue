@@ -1,7 +1,7 @@
 <template>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <header class="bg-custom-blue fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out">
+    <header class="bg-custom-blue sticky top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out">
 
 
         <nav class="container relative flex items-center justify-between px-6 py-8 text-white ">

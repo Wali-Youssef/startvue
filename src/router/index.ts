@@ -32,5 +32,8 @@ const router = createRouter({
     }
   ]
 })
-
+router.afterEach(() => {
+  // Faire défiler vers le haut de la page après chaque changement de route
+  window.scrollTo({ top: 0, behavior: 'instant' }); // Utilisation de 'instant' pour un défilement instantané
+});
 export default router

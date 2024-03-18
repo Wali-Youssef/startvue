@@ -81,7 +81,7 @@ export default defineComponent({
 </style>
 
 <template>
-  <main class="font-fira-code text-white pt-20  ">
+  <main class="font-fira-code text-white  ">
 <intro /> 
 
 <moi />
